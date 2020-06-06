@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.material-icons {
+  position: absolute;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 15px;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  color: #e0e0e0;
+  background: #00695c;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.sidenav-trigger {
+  position: absolute;
+}
+
+.profile {
+  width: 100px;
+  height: 100px;
+  border: 4px solid #e0e0e0;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.top-bg {
+  width: 100%;
+  height: 100px;
+  background-color: #004d40;
+  margin-bottom: -50px;
+}
+
+.sidenav-bg {
+  background-color: #fafafa;
+}
+
+.whoami {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#212121a9, #212121a9), url("../img/pineapple.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.banner-content {
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+  text-align: left;
+}
+
+.whoami h1, p{
+  color: #f5f5f5;
+  font-weight: 500;
+  text-shadow: 0.3em, 0.5em, 0.8em #212121;
+}
+.whoami button {
+  color: #fafafa;
+  background: #00acc1 !important;
+  font-weight: bolder;
+}
+
+#i-am {
+  margin-left: 100%;
+  height: 100vh;
+  background-color: #121212;
+  
+}
+
+.slidein {
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  
+}
+
+.slideout {
+  animation-duration: 2s;
+  animation-name: slideout;
+  animation-iteration-count: 1;
+  /* animation-direction: alternate; */
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    
+  }
+
+  to {
+    margin-left: 50%;
+    
+  }
+}
+
+@keyframes slideout {
+  from {
+    margin-left: 50%;
+    
+  }
+
+  to {
+    margin-left: 100%;
+ 
+  }
+}
+
+/* SKILLS STYLES */
+.skill-container {
+  position: relative;
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill-container .card-skill {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.skill-container .card-skill:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,.5);
+}
+
+.skill-container .card-skill:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, .03);
+  pointer-events: none;
+  z-index: 1;
+
+}
+
+.card-skill h2 {
+  margin: 0;
+  font-size: 32px
+}
+
+svg {
+  position: relative;  
+  width: 150px;
+  height: 150px;
+  z-index: 1000;
+ }
+ 
+ svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+ }
+ 
+ svg circle:nth-child(2) {
+    stroke-dasharray: 220;
+    stroke-dashoffset: 220;
+ }
+ 
+ .card-skill:nth-child(1) svg circle:nth-child(2) {
+    stroke: #00ff43;
+ }
+ 
+ .card-skill:nth-child(2) svg circle:nth-child(2) {
+    stroke: #00a1ff;
+ }
+ 
+ .card-skill:nth-child(3) svg circle:nth-child(2) {
+    stroke: #fffb00;
+ }
+
+/* EDUCATION STYLES */
+
+.education {
+  width: 100%;
+  height: 100vh;
+}
+
+.cu-image {
+  height: 100%;
+  background:linear-gradient(#212121a9, #212121a9), url("../img/MyUniversity.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
